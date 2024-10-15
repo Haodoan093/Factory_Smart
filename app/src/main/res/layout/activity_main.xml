@@ -98,6 +98,7 @@
                 android:text="Bật/Tắt còi"
                 android:layout_marginBottom="10dp" />
 
+            <!-- Băng chuyền -->
             <Switch
                 android:id="@+id/switchConveyorBelt"
                 android:layout_width="wrap_content"
@@ -105,6 +106,7 @@
                 android:text="Bật/Tắt băng chuyền"
                 android:layout_marginBottom="20dp" />
 
+            <!-- Nút đảo chiều băng chuyền -->
             <Button
                 android:id="@+id/btnConveyorDirection"
                 android:layout_width="wrap_content"
@@ -112,6 +114,7 @@
                 android:text="Đảo chiều băng chuyền"
                 android:layout_marginBottom="20dp" />
 
+            <!-- Đèn -->
             <Switch
                 android:id="@+id/switchLight"
                 android:layout_width="wrap_content"
