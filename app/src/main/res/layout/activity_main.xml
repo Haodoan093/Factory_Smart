@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F3F3F3"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:elevation="4dp">
+
+            <!-- Tiêu đề chính -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smarthome Control Panel"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Hiển thị thông tin môi trường -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thông tin môi trường"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp" />
+
+            <!-- TextView dùng để hiện cảnh báo -->
+            <TextView
+                android:id="@+id/tvWarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cảnh báo: Vui lòng kiểm tra kết nối!"
+                android:textColor="#FF0000"
+                android:textSize="16sp"
+                android:background="#FFCDD2"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone" />
+
+            <!-- Hiển thị nhiệt độ -->
+            <TextView
+                android:id="@+id/tvTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhiệt độ: 0°C"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Hiển thị độ ẩm -->
+            <TextView
+                android:id="@+id/tvHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Độ ẩm: 0%"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Công tắc các thiết bị -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thiết bị điều khiển"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textColor="#333333" />
+
+            <!-- Quạt -->
+            <Switch
+                android:id="@+id/switchFan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bật/Tắt quạt"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Còi -->
+            <Switch
+                android:id="@+id/switchAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bật/Tắt còi"
+                android:layout_marginBottom="10dp" />
+
+            <Switch
+                android:id="@+id/switchConveyorBelt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bật/Tắt băng chuyền"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnConveyorDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đảo chiều băng chuyền"
+                android:layout_marginBottom="20dp" />
+
+            <Switch
+                android:id="@+id/switchLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bật/Tắt đèn"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

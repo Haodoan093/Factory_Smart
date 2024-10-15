@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "211882586636",
+    "firebase_url": "https://home-iot-55c72-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "home-iot-55c72",
+    "storage_bucket": "home-iot-55c72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211882586636:android:aaee04388c01d5df20f429",
+        "android_client_info": {
+          "package_name": "com.example.factory_smart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH7dq2Xq5HNTaXtWIH6ZevARR7Fs_Ja1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
