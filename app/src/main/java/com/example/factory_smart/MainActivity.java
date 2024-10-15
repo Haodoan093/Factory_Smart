@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Điều khiển bật/tắt còi
         switchAlarm.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            databaseReference.child("Devices").child("Alarm").setValue(isChecked ? 2 : 0);
+            databaseReference.child("Devices").child("Alarm").setValue(isChecked ? 1 : 0);
         });
 
         // Điều khiển bật/tắt băng chuyền và lấy giá trị từ nút đảo chiều
